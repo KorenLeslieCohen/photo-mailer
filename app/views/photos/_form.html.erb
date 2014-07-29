@@ -1,0 +1,26 @@
+<%= form_for(@photo) do |f| %>
+  <% if @photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
+
+      <ul>
+      <% @photo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
+ <div class="actions">
+    <%= f.file_field :photo %>
+    <br><br>
+    <%#= f.label :title %> <br>
+    <%#= f.text_field :title %> <br><br>
+
+   <!--  <input type="file" accept="image/*" capture="camera"> -->
+    <%= f.submit %>
+  </div>
+  <% end %>

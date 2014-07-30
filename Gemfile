@@ -23,6 +23,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'mail'
+gem 'mandrill-api', :require => 'mandrill' 
+gem 'aws-sdk'
 
 # manipulate images
 # gem 'rmagick', '~> 2.13.2'

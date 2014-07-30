@@ -25,6 +25,10 @@ class CardsController < ApplicationController
   # POST /cards.json
   def create
     @card = Card.new
+    @card.sender_email = params[:card][:sender_email]
+    @card.recipient_email = params[:card][:recipient_email]
+    @card.sender_name = params[:card][:sender_name]
+    @card.recipient_name = params[:card][:recipient_name]
 
     # raise params.inspect
     uploaded_io = params[:card][:photo]
@@ -36,10 +40,27 @@ class CardsController < ApplicationController
 
     @card.path = "#{uploaded_filename}"
 
+    m = Mandrill::API.new
+    message = {  
+     :subject=> "You've received a postcard from FlatironPostcard",  
+     :from_name=> @card.sender_name,
+     :text=>"You've received a postcard from FlatironPostcard, but you have HTML emails disabled. Sorry!",  
+     :to=>[  
+       {  
+         :email=> @card.recipient_email,  
+         :name=> @card.recipient_name 
+       }  
+     ],  
+     :html=>render_to_string('user_mailer/welcome_email', :layout => false),  
+     :from_email=> @card.sender_email  
+    }  
+    sending = m.messages.send message 
+    # raise sending.inspect
+
     respond_to do |format|
       if @card.save
         # Tell the UserMailer to send a welcome email after save
-        UserMailer.welcome_email(@card).deliver
+        # UserMailer.welcome_email(@card).deliver
 
         format.html { redirect_to @card, notice: 'Card was successfully created.' }
         format.json { render :show, status: :created, location: @card }

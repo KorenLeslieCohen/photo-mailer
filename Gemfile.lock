@@ -31,6 +31,9 @@ GEM
       builder
       multi_json
     arel (5.0.1.20140414130214)
+    aws-sdk (1.49.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -64,6 +67,7 @@ GEM
     docile (1.1.5)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    excon (0.38.0)
     execjs (2.2.1)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
@@ -99,6 +103,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.52)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.6.0)
@@ -220,6 +227,7 @@ PLATFORMS
 
 DEPENDENCIES
   airbrake
+  aws-sdk
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.1.1)
@@ -232,6 +240,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mail
+  mandrill-api
   pg
   pry
   rails (= 4.1.4)

@@ -4,15 +4,18 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to example.com, <%= @card.sender_name %></h1>
+  <center>
+    <h1>Welcome to Flatiron Postcard, <%= @card.recipient_name %>!</h1>
     <p>
-      You have successfully signed up to example.com,
-      your username is: <%#= @user.login %>.<br>
+      You've been sent a postcard from <%= @card.sender_name %>!<br>
     </p>
     <p>
-      To login to the site, just follow this link: <%#= @url %>.
-      <p><%= image_tag "#{@card.path}", height: "100"%></p>
+      <p><%= image_tag "#{@card.path}", height: "250"%></p>
     </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p>Message:</p>
+    <p><%= @card.message %></p>
+
+    <p>Return the favor and send your own FlatironPostcard!</p>
+    </center>
   </body>
 </html>

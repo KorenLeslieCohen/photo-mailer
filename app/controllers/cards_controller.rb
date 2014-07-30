@@ -30,6 +30,7 @@ class CardsController < ApplicationController
     @card.recipient_email = params[:card][:recipient_email]
     @card.sender_name = params[:card][:sender_name]
     @card.recipient_name = params[:card][:recipient_name]
+    @card.message = params[:card][:message]
 
     # raise params.inspect
     uploaded_io = params[:card][:photo]
@@ -56,7 +57,11 @@ class CardsController < ApplicationController
        {  
          :email=> @card.recipient_email,  
          :name=> @card.recipient_name 
-       }  
+       },
+       {  
+         :email=> @card.sender_email,  
+         :name=> @card.sender_name 
+       } 
      ],  
      :html=>render_to_string('user_mailer/postcard', :layout => false),  
      :from_email=> @card.sender_email  

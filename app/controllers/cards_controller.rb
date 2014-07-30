@@ -14,6 +14,7 @@ class CardsController < ApplicationController
 
   # GET /cards/new
   def new
+    # binding.pry
     @card = Card.new
   end
 
@@ -32,13 +33,19 @@ class CardsController < ApplicationController
 
     # raise params.inspect
     uploaded_io = params[:card][:photo]
-    uploaded_filename = (Time.now.to_f * 1000).to_i.to_s + uploaded_io.original_filename
+    # uploaded_filename = (Time.now.to_f * 1000).to_i.to_s + uploaded_io.original_filename
 
-    File.open(Rails.root.join('public', 'images',uploaded_filename), 'wb') do |file|
-      file.write(uploaded_io.read)
-    end
+    # File.open(Rails.root.join('public', 'images',uploaded_filename), 'wb') do |file|
+    #   file.write(uploaded_io.read)
+    # end
 
-    @card.path = "#{uploaded_filename}"
+    s3= AWS::S3.new
+    bucket_name = 'FlatironPostcard'
+    key = (0...50).map { ('a'..'z').to_a[rand(26)] }.join
+    s3.buckets[bucket_name].objects[key].write(:file => uploaded_io)
+    s3.buckets[bucket_name].objects[key].acl = :public_read
+
+    @card.path = "https://s3.amazonaws.com/FlatironPostcard/#{key}"
 
     m = Mandrill::API.new
     message = {  

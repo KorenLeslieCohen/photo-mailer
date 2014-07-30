@@ -1,7 +1,0 @@
-# mandrill mailer
-development:
-MANDRILL_APIKEY: BiqoGU1DVFH7vSXaiFpKNw
-
-# S3 amazon web services
-aws_access_key_id: AKIAIACLB2MUKUSN7JTQ
-aws_secret_access_key: 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

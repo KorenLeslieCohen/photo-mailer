@@ -58,7 +58,7 @@ class CardsController < ApplicationController
          :name=> @card.recipient_name 
        }  
      ],  
-     :html=>render_to_string('user_mailer/welcome_email', :layout => false),  
+     :html=>render_to_string('user_mailer/postcard', :layout => false),  
      :from_email=> @card.sender_email  
     }  
     sending = m.messages.send message 

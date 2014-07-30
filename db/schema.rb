@@ -11,10 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140729191930) do
+ActiveRecord::Schema.define(version: 20140730012710) do
 
-  create_table "photos", force: true do |t|
+  create_table "cards", force: true do |t|
+    t.string   "sender_email"
+    t.string   "recipient_email"
+    t.string   "sender_name"
+    t.string   "recipient_name"
     t.string   "path"
+    t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

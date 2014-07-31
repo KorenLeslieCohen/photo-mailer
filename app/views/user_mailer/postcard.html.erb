@@ -1,32 +1,10 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
-  <body>
-  <center>
-    <h1>Welcome to Flatiron Postcard, <%= @card.recipient_name %>!</h1>
-    <p>
-      You've been sent a postcard from <%= @card.sender_name %>!<br>
-    </p>
-    <p>
-      <p><%#= image_tag "#{@card.path}", height: "250"%></p>
-    </p>
-    <p>Message:</p>
-    <p><%= @card.message %></p>
-
-    <p>Return the favor and send your own FlatironPostcard!</p>
-    </center>
-  </body>
-</html> -->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <!-- NAME: 1 COLUMN -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>*|SUBJECT|*</title>
+        <title>FlatironPostcard</title>
         
     <style type="text/css">
 
@@ -709,7 +687,7 @@
                                 
                                 <table style="width:564px;" class="mcpreview-image-uploader">
                                   
-                                  <center><%= image_tag "#{@card.path}", width: "480"%></center>
+                                  <center><%= image_tag "#{@card.photo.url}", width: "480"%></center>
                                 </table>
                                 
                             </td>

@@ -5,7 +5,6 @@ class CreateCards < ActiveRecord::Migration
       t.string :recipient_email
       t.string :sender_name
       t.string :recipient_name
-      t.string :path
       t.text :message
 
       t.timestamps

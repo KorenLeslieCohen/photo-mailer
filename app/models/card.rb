@@ -13,6 +13,27 @@ def s3_credentials
   { :access_key_id => AWS_ACCESS_KEY_ID, :secret_access_key => AWS_SECRET_ACCESS_KEY}
 end
 
+def mail (html_card)
+    m = Mandrill::API.new
+    message = {  
+     :subject=> "You've received a postcard from FlatironPostcard",  
+     :from_name=> self.sender_name,
+     :text=>"You've received a postcard from FlatironPostcard, but you have HTML emails disabled. Sorry!",  
+     :to=>[  
+       {  
+         :email=> self.recipient_email,  
+         :name=> self.recipient_name 
+       },
+       {  
+         :email=> self.sender_email,  
+         :name=> self.sender_name 
+       } 
+     ],  
+     :html=>html_card,  
+     :from_email=> self.sender_email  
+    }  
+    sending = m.messages.send message
+end
  
 
 

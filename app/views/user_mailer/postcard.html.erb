@@ -10,7 +10,7 @@
       You've been sent a postcard from <%= @card.sender_name %>!<br>
     </p>
     <p>
-      <p><%= image_tag "#{@card.path}", height: "250"%></p>
+      <p><%= image_tag "#{@card.photo.url}", height: "250"%></p>
     </p>
     <p>Message:</p>
     <p><%= @card.message %></p>

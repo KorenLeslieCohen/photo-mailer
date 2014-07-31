@@ -600,7 +600,7 @@
                         
                         <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #F10E0E;">
                         
-                            You've received this email because <%= @card.sender_name %> sent you a Flatiron Postcard!
+                            You should feel awesome! <%= @card.sender_name %> sent you a Flatiron Postcard!
                         </td>
                     </tr>
                 </tbody></table>
@@ -636,9 +636,10 @@
                     <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer">
                         <tbody><tr>
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0;">
-                                
+                                <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
                                     
-                                        <img align="left" alt="" src="https://gallery.mailchimp.com/52202139eae638cef5b3ea2bd/images/aa9c0503-d793-4298-b7df-625a19e1435b.png" width="564" style="max-width:849px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="left" alt="" src="https://s3.amazonaws.com/FlatironPostcard/flatironpostcard.png" width="564" style="max-width:849px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
                                     
                                 
                             </td>
@@ -686,8 +687,9 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0;">
                                 
                                 <table style="width:564px;" class="mcpreview-image-uploader">
-                                  
+                                  <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
                                   <center><%= image_tag "#{@card.photo.url}", width: "480"%></center>
+                                  <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
                                 </table>
                                 
                             </td>
@@ -707,7 +709,12 @@
                         <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;">
 
                             <center><h1>Message from <%= @card.sender_name %>:</h1></center>
-   <center> <p><%= @card.message %></p></center>
+                            <br>
+   <center> <h3><%= @card.message %></h3></center>
+   <br><br>
+   <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
+   <br>
+
                         
                             <center>Return the favor! <a href="http://flatironpostcard.com" target="_blank">Send your own Flatiron Postcard!</a><br></center>
 <br>

@@ -30,7 +30,6 @@ class CardsController < ApplicationController
   def create
     @card = Card.new(card_params)
 
-
     respond_to do |format|
       if @card.save
         @card.mail (render_to_string('user_mailer/postcard', :layout => false))
@@ -40,7 +39,7 @@ class CardsController < ApplicationController
         format.html { redirect_to "/thankyou", notice: 'Your card is on its way!' }
         format.json { render :show, status: :created, location: @card }
       else
-        format.html { render :new }
+        format.html { redirect_to "/about" }
         format.json { render json: @card.errors, status: :unprocessable_entity }
       end
     end

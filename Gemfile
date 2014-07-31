@@ -25,6 +25,7 @@ gem 'spring',        group: :development
 gem 'mail'
 gem 'mandrill-api', :require => 'mandrill' 
 gem 'aws-sdk'
+gem 'paperclip'
 
 # manipulate images
 # gem 'rmagick', '~> 2.13.2'
@@ -58,7 +59,7 @@ group :test, :development do
 end
 
 group :production do
-  gem "pg"
+  #gem "pg"
   gem "google-analytics-rails"
   gem "rails_12factor"
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730012710) do
+ActiveRecord::Schema.define(version: 20140731165549) do
 
   create_table "cards", force: true do |t|
     t.string   "sender_email"
@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(version: 20140730012710) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
 end

@@ -42,6 +42,7 @@ gem 'rmagick'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
 group :test, :development do
   gem "rspec-rails"
   gem "capybara"
@@ -59,7 +60,7 @@ group :test, :development do
 end
 
 group :production do
-  #gem "pg"
+  gem "pg"
   gem "google-analytics-rails"
   gem "rails_12factor"
 end

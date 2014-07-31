@@ -141,7 +141,7 @@
       /*@editable*/line-height:125%;
       /*@editable*/letter-spacing:-1px;
       margin:0;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
       font-family: 'Shadows Into Light Two';
     }
   /*
@@ -160,7 +160,7 @@
       /*@editable*/line-height:125%;
       /*@editable*/letter-spacing:-.75px;
       margin:0;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
       font-family: 'Shadows Into Light Two';
     }
   /*
@@ -179,7 +179,7 @@
       /*@editable*/line-height:125%;
       /*@editable*/letter-spacing:-.5px;
       margin:0;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
       font-family: 'Shadows Into Light Two';
     }
   /*
@@ -198,7 +198,7 @@
       /*@editable*/line-height:125%;
       /*@editable*/letter-spacing:normal;
       margin:0;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
     }
   /*
   @tab Preheader
@@ -220,7 +220,7 @@
       /*@editable*/font-family:Helvetica;
       /*@editable*/font-size:11px;
       /*@editable*/line-height:125%;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
     }
   /*
   @tab Preheader
@@ -255,7 +255,7 @@
       /*@editable*/font-family:Helvetica;
       /*@editable*/font-size:15px;
       /*@editable*/line-height:150%;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
     }
   /*
   @tab Header
@@ -290,7 +290,7 @@
       /*@editable*/font-family:Helvetica;
       /*@editable*/font-size:15px;
       /*@editable*/line-height:150%;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
     }
   /*
   @tab Body
@@ -325,7 +325,7 @@
       /*@editable*/font-family:Helvetica;
       /*@editable*/font-size:11px;
       /*@editable*/line-height:125%;
-      /*@editable*/text-align:left;
+      /*@editable*/text-align:center;
     }
   /*
   @tab Footer
@@ -487,8 +487,12 @@
   @tip Make the first-level headings larger in size for better readability on small screens.
   */
     h1{
-      /*@editable*/font-size:24px !important;
+      /*@editable*/font-size:33px !important;
       /*@editable*/line-height:125% !important;
+    }
+
+    h1 span {
+      color: red;
     }
 
 } @media only screen and (max-width: 480px){
@@ -686,7 +690,7 @@
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;">
                         
-                            <center><h1>Hey, <%= @card.recipient_name %>! You've received a FlatironPostcard from <%= @card.sender_name %>!</h1><center>
+                            <center><h1>Hey, <span><%= @card.recipient_name %></span>!<br>You've received a FlatironPostcard from<br><span><%= @card.sender_name %></span>!</h1><center>
 
                         </td>
                     </tr>
@@ -703,7 +707,7 @@
                         <tbody><tr>
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0;">
                                 
-                                <table style="width:564px;" class="mcpreview-image-uploader" border="2px solid red">
+                                <table style="width:564px;" class="mcpreview-image-uploader">
                                   
                                   <center><%= image_tag "#{@card.path}", width: "480"%></center>
                                 </table>

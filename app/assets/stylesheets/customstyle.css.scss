@@ -1,0 +1,259 @@
+@import url('http://fonts.googleapis.com/css?family=Pontano+Sans');
+@import url('http://fonts.googleapis.com/css?family=Shadows Into Light Two');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Pontano Sans';
+}
+
+a, 
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+a, 
+a:visited {
+  color: #239AFB;
+}
+
+a:hover {
+  color: red;
+  background: none;
+}
+
+body {
+  background-image: url("vintage-airmail.png");
+  /*background-image: image-url("vintage-airmail.png");*/
+  background-size: cover;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p,
+#thankyou a {
+  font-family: 'Shadows Into Light Two';
+  font-size: 35px;
+}
+
+#about p, 
+#about a {
+  font-family: 'Shadows Into Light Two';
+  font-size: 25px;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Shadows Into Light Two';
+  padding-top: 70px;
+}
+
+#privacy h1 {
+  padding-top: 20px;
+}
+
+h3 {
+  font-family: 'Shadows Into Light Two';
+  padding-top: 240px;
+  font-size: 130px;
+}
+
+h4 a {
+  font-family: 'Shadows Into Light Two';
+  font-size: 40px;
+}
+
+/*#card_photo {
+  width: 140px;
+}*/
+
+.submit-card input {
+  border: 1px solid #239AFB;
+  color: white;
+  background: red;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Shadows Into Light Two';
+  transition-duration: .3s;
+  width: 300px;
+}
+
+.submit-card input:hover {
+  background: white;
+  color: red;
+  transition-property: background, border, color;
+  transition-duration: .3s;
+}
+
+.photo input,
+#photo input input,
+#photo {
+  border: 1px solid #239AFB;
+  color: white;
+  background: #A0D3FD;
+  padding: 10px;
+  font-size: 20px;
+  width: 300px;
+}
+
+/*label {
+  padding-top: 0;
+  margin-top: 0;
+}*/
+
+button,
+button button,
+button input,
+input button {
+  border: 1px solid black;
+  background: #A0D3FD;
+}
+
+#notice {
+  background: red;
+}
+
+input, 
+textarea {
+  border: 1px solid #239AFB;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #A0D3FD;
+  font-size: 20px;
+  opacity: .9;
+}
+
+input {
+  width: 400px;
+}
+
+textarea {
+  width: 600px;
+}
+
+#field {
+  max-width: 500px;
+  background: #A0D3FD;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Shadows Into Light Two';
+}
+
+/* Smaller Screens - 870px Breakpoint -------> */
+@media screen and (max-width : 870px) {
+
+  h3 {
+    font-size: 100px;
+  }
+
+}
+
+/* Smaller Screens - 805px Breakpoint -------> */
+@media screen and (max-width : 805px) {
+
+  .recipient {
+    margin-top: 20px;
+  }
+
+  input, 
+  textarea {
+    opacity: 1;
+  }
+
+}
+
+/* Smaller Screens - 695px Breakpoint -------> */
+@media screen and (max-width : 695px) {
+
+  h3 {
+    font-size: 80px;
+  }
+
+}
+
+
+/* Smaller Screens - 600px Breakpoint -------> */
+@media screen and (max-width : 600px) {
+
+  textarea {
+    width: 550px;
+  }
+
+}
+
+/* Smaller Screens - 570px Breakpoint -------> */
+@media screen and (max-width : 570px) {
+
+  h3 {
+    font-size: 60px;
+  }
+
+}
+
+/* Smaller Screens - 550px Breakpoint -------> */
+@media screen and (max-width : 550px) {
+
+  textarea {
+    width: 500px;
+  }
+
+}
+
+/* Smaller Screens - 500px Breakpoint -------> */
+@media screen and (max-width : 500px) {
+
+  textarea {
+    width: 450px;
+  }
+
+
+}
+
+/* Smaller Screens - 450px Breakpoint -------> */
+@media screen and (max-width : 450px) {
+
+  textarea {
+    width: 400px;
+  }
+
+  body {
+    background-image: url("air.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+  }
+
+  footer p {
+    font-size: 25px;
+  }
+
+  h1 {
+    padding-top: 60px;
+  }
+
+}
+
+
+
+
+
+
+
+

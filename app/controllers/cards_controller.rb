@@ -4,12 +4,14 @@ class CardsController < ApplicationController
   # GET /cards
   # GET /cards.json
   def index
-    @cards = Card.all
+    # @cards = Card.all
+    redirect_to new_card_path
   end
 
   # GET /cards/1
   # GET /cards/1.json
   def show
+    redirect_to new_card_path
   end
 
   # GET /cards/new
@@ -20,6 +22,7 @@ class CardsController < ApplicationController
 
   # GET /cards/1/edit
   def edit
+    redirect_to new_card_path
   end
 
   # POST /cards
@@ -74,7 +77,7 @@ class CardsController < ApplicationController
         # Tell the UserMailer to send a welcome email after save
         # UserMailer.welcome_email(@card).deliver
 
-        format.html { redirect_to @card, notice: 'Card was successfully created.' }
+        format.html { redirect_to "/thankyou", notice: 'Your card is on its way!' }
         format.json { render :show, status: :created, location: @card }
       else
         format.html { render :new }
@@ -85,17 +88,17 @@ class CardsController < ApplicationController
 
   # PATCH/PUT /cards/1
   # PATCH/PUT /cards/1.json
-  def update
-    respond_to do |format|
-      if @card.update(card_params)
-        format.html { redirect_to @card, notice: 'Card was successfully updated.' }
-        format.json { render :show, status: :ok, location: @card }
-      else
-        format.html { render :edit }
-        format.json { render json: @card.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+  #   respond_to do |format|
+  #     if @card.update(card_params)
+  #       format.html { redirect_to new_card_path, notice: 'Card was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @card }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @card.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # DELETE /cards/1
   # DELETE /cards/1.json

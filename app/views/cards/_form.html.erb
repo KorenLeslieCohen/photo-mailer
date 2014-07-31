@@ -1,3 +1,4 @@
+<center>
 <%= form_for(@card) do |f| %>
   <% if @card.errors.any? %>
     <div id="error_explanation">
@@ -12,26 +13,39 @@
   <% end %>
 
   <div class="actions">
-    <%= f.file_field :photo %>
-    <br><br>
-    <%#= f.label :title %> <br>
-    <%#= f.text_field :title %> <br><br>
+
+  
+    <%#= f.label :title %> 
+    <%#= f.text_field :title %> 
 
    <!--  <input type="file" accept="image/*" capture="camera"> -->
   
-  <%= f.label :sender_email %> <br>
-    <%= f.text_field :sender_email %> <br><br>
-      <%= f.label :recipient_email %> <br>
-    <%= f.text_field :recipient_email %> <br><br>
-      <%= f.label :sender_name %> <br>
-    <%= f.text_field :sender_name %> <br><br>
-      <%= f.label :recipient_name %> <br>
-    <%= f.text_field :recipient_name %> <br><br>
-    <%= f.label :message %> <br>
-    <%= f.text_area :message %> <br><br>
-    <%= f.submit %>
+  <%#= f.label :sender_email %> <br>
+    <%= f.text_field :sender_email, placeholder: "Generous Sender Email"%> 
+      <%#= f.label :recipient_email %> 
+    <%= f.text_field :recipient_email, class: "recipient", placeholder: "Lucky Recipient Email"%> <br>
+      <%#= f.label :sender_name %> <br>
+    <%= f.text_field :sender_name, placeholder: "Your Name" %> 
+      <%#= f.label :recipient_name %> 
+    <%= f.text_field :recipient_name, class: "recipient", placeholder: "Recipient Name" %> <br>
+    <%#= f.label :message %> <br>
+       <div class="photo">
+  <%#= f.label :photo %> 
+    <%= f.file_field :photo, placeholder: "Upload Photo"%>
+
+
+    <%#= form_tag(multipart: true) do %>
+  <%#= file_field_tag 'photo' %>
+<%# end %>
+    </div><br>
+  <div class="submit-card">
+  <h2>Message</h2>
+    <%= f.text_area :message %> <br>
+    <%= f.submit "Send postcard!" %>
+  </div>
   </div>
 <% end %>
+</center>
 
 
 

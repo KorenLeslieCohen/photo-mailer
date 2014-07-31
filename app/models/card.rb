@@ -1,10 +1,10 @@
 class Card < ActiveRecord::Base
 
-has_attached_file :photo, :storage => :s3, :hash_secret => "longSecretString", :path => ":hash", :bucket => "FlatironPostcard"
+has_attached_file :photo, :storage => :s3, :hash_secret => "longSecretString", :path => ":hash", :bucket => "FlatironPostcard", :styles => { :thumb => "1024x768"}, :default_style => :thumb
 
 validates :photo, :attachment_presence => true
 
-validates_with AttachmentPresenceValidator, :attributes => :photo
+
 validates_with AttachmentSizeValidator, :attributes => :photo, :less_than => 3.megabytes
 validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
 validates_presence_of :sender_email, :sender_name, :recipient_name, :recipient_email, :message

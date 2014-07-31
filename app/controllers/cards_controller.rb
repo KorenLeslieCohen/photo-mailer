@@ -39,7 +39,7 @@ class CardsController < ApplicationController
         format.html { redirect_to "/thankyou", notice: 'Your card is on its way!' }
         format.json { render :show, status: :created, location: @card }
       else
-        format.html { redirect_to "/about" }
+        format.html { render :new }
         format.json { render json: @card.errors, status: :unprocessable_entity }
       end
     end

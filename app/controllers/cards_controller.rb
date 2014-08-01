@@ -11,7 +11,7 @@ class CardsController < ApplicationController
   # GET /cards/1
   # GET /cards/1.json
   def show
-    redirect_to new_card_path
+    redirect_to root_url
   end
 
   # GET /cards/new

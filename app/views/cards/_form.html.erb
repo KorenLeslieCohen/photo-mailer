@@ -13,36 +13,20 @@
   <% end %>
 
   <div class="actions">
-
-  
-    <%#= f.label :title %> 
-    <%#= f.text_field :title %> 
-
-   <!--  <input type="file" accept="image/*" capture="camera"> -->
-  
-  <%#= f.label :sender_email %> <br>
+    <br>
     <%= f.text_field :sender_email, placeholder: "Generous Sender Email"%> 
-      <%#= f.label :recipient_email %> 
-    <%= f.text_field :recipient_email, class: "recipient", placeholder: "Lucky Recipient Email"%> <br>
-      <%#= f.label :sender_name %> <br>
+    <%= f.text_field :recipient_email, class: "recipient", placeholder: "Lucky Recipient Email"%> <br><br>
     <%= f.text_field :sender_name, placeholder: "Your Name" %> 
-      <%#= f.label :recipient_name %> 
-    <%= f.text_field :recipient_name, class: "recipient", placeholder: "Recipient Name" %> <br>
-    <%#= f.label :message %> <br>
-       <div class="photo">
-  <%#= f.label :photo %> 
-    <%= f.file_field :photo, placeholder: "Upload Photo"%>
-
-
-    <%#= form_tag(multipart: true) do %>
-  <%#= file_field_tag 'photo' %>
-<%# end %>
+    <%= f.text_field :recipient_name, class: "recipient", placeholder: "Recipient Name" %> 
+    <br><br>
+    <div class="photo">
+      <%= f.file_field :photo, placeholder: "Upload Photo"%>
     </div><br>
-  <div class="submit-card">
-  <h2>Include a message!</h2>
-    <%= f.text_area :message %> <br>
-    <%= f.submit "Send postcard!" %>
-  </div>
+    <div class="submit-card">
+      <h2>Include a message!</h2>
+      <%= f.text_area :message %> <br>
+      <%= f.submit "Send postcard!" %>
+    </div>
   </div>
 <% end %>
 </center>

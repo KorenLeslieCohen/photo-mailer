@@ -2,7 +2,7 @@
 // $('#new-photo').css({"background": "red", "width": "300px"});
 // click will actually click on the below div
 
-// $(document).ready(function(){
+$(document).ready(function(){
 // $('#card_photo').append("<div id='new-photo'></div>");
 // $('.photo').css({"border": "1px solid #239AFB", "color": "white", "height": "100px", "width": "200px"});
 // $('.photo').click(function(){
@@ -11,10 +11,11 @@
 
 
   
+$('#one').show().delay(2000).hide();
+$('#two').hide().delay(2000).show();
 
 
-
-// });
+});
 
 
 

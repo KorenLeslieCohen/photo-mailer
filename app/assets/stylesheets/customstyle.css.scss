@@ -298,6 +298,14 @@ li {
     width: 450px;
   }
 
+}
+
+/* iPhone - 350px Breakpoint -------> */
+@media screen and (max-width : 350px) {
+
+  textarea {
+    width: 350px; /*changed this*/
+  }
 
 }
 
@@ -311,6 +319,7 @@ li {
     background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
     background-size: 340px;
     background-repeat: no-repeat;
+    background-position: center-top; /*changed this*/
   }
 
   footer p {

@@ -301,7 +301,93 @@ li {
 
 }
 
+@media only screen and (max-device-width : 480px) and (orientation: landscape) {
+  textarea {
+    width: 400px;
+  }
+
+  body {
+    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
+    background-size: 340px;
+    background-repeat: no-repeat;
+  }
+
+  footer p {
+    font-size: 25px;
+  }
+
+  h1 {
+    padding-top: 140px;
+  }
+
+  h3 {
+    font-size: 50px;
+    padding-top: 200px;
+  }
+
+  footer {
+    /*position: absolute;*/
+ /*   bottom: 0;*/
+    /*width: 100%;*/
+    display: none;
+  }
+
+  #home {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #home p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-device-width : 480px) {
+
+  textarea {
+    width: 400px;
+  }
+
+  body {
+    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
+    background-size: 340px;
+    background-repeat: no-repeat;
+  }
+
+  footer p {
+    font-size: 25px;
+  }
+
+  h1 {
+    padding-top: 140px;
+  }
+
+  h3 {
+    font-size: 50px;
+    padding-top: 200px;
+  }
+
+  footer {
+    /*position: absolute;*/
+ /*   bottom: 0;*/
+    /*width: 100%;*/
+    display: none;
+  }
+
+  #home {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #home p {
+    font-size: 30px;
+  }
+
+}
+
 /* Smaller Screens - 450px Breakpoint -------> */
+/*@media only screen and (max-device-width : 480px) and (orientation: landscape),*/
+/*@media only screen and (max-device-width : 480px),*/
 @media screen and (max-width : 450px) {
 
   textarea {
@@ -344,6 +430,8 @@ li {
   }
 
 }
+
+
 
 
 

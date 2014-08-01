@@ -495,12 +495,14 @@ li {
   }
 }
 
-/* iPhone - 350px Breakpoint -------> */
+/* iPhone (portrait) - 350px Breakpoint -------> */
 @media only screen and (max-width : 320px) {
 
   textarea,
   input {
     width: 300px; /*changed this*/
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   body {
@@ -511,6 +513,20 @@ li {
   }
 
 }
+
+
+
+/*input, 
+textarea {
+  border: 1px solid #239AFB;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #A0D3FD;
+  font-size: 20px;
+  opacity: .9;
+}*/
 
 
 

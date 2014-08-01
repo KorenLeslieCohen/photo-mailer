@@ -19,7 +19,7 @@ end
 def mail (html_card)
     m = Mandrill::API.new
     message = {  
-     :subject=> "You've received a postcard from FlatironPostcard",  
+     :subject=> "Hey, #{self.recipient_name}! #{self.sender_name} sent you a FlatironPostcard!",  
      :from_name=> self.sender_name,
      :text=>"You've received a postcard from FlatironPostcard, but you have HTML emails disabled. Sorry!",  
      :to=>[  

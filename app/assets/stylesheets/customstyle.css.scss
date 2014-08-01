@@ -61,6 +61,13 @@ h1 {
   padding-top: 70px;
 }
 
+#home p {
+  font-family: 'Shadows Into Light Two';
+  font-size: 50px;
+  color: red;
+  line-height: 1.3;
+}
+
 #privacy h1 {
   padding-top: 20px;
 }
@@ -174,6 +181,54 @@ h2 {
   font-family: 'Shadows Into Light Two';
 }
 
+li {
+  font-family: 'Shadows Into Light Two';
+  list-style: none;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+#error_explanation,
+#error_explanation ul,
+#error_explanation li {
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 1px solid white;
+  /*padding: 7px;*/
+  /*padding-bottom: 12px;*/
+  /*margin-bottom: 20px;*/
+  background-color: white;
+    text-align: center;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 14px;
+  margin: -7px;
+  background-color: red;
+  color: white;
+    text-align: center;
+
+}
+
+#error_explanation p {
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#error_explanation ul li {
+  font-size: 14px;
+  list-style: none;
+  text-align: center;
+}
 
 
 /* Smaller Screens - 870px Breakpoint -------> */
@@ -254,8 +309,8 @@ h2 {
   }
 
   body {
-    background-image: url("air.png");
-    background-size: 400px;
+    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
+    background-size: 340px;
     background-repeat: no-repeat;
   }
 
@@ -264,7 +319,28 @@ h2 {
   }
 
   h1 {
-    padding-top: 60px;
+    padding-top: 140px;
+  }
+
+  h3 {
+    font-size: 50px;
+    padding-top: 200px;
+  }
+
+  footer {
+    /*position: absolute;*/
+ /*   bottom: 0;*/
+    /*width: 100%;*/
+    display: none;
+  }
+
+  #home {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #home p {
+    font-size: 30px;
   }
 
 }

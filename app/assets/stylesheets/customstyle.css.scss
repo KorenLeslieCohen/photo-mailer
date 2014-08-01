@@ -27,7 +27,6 @@ a:hover {
 
 body {
   background-image: url("vintage-airmail.png");
-  /*background-image: image-url("vintage-airmail.png");*/
   background-size: cover;
 }
 
@@ -83,11 +82,8 @@ h4 a {
   font-size: 40px;
 }
 
-/*#card_photo {
-  width: 140px;
-}*/
-
 .submit-card input {
+  width: 300px;
   border: 1px solid #239AFB;
   color: white;
   background: red;
@@ -95,7 +91,6 @@ h4 a {
   font-size: 20px;
   font-family: 'Shadows Into Light Two';
   transition-duration: .3s;
-  width: 300px;
 }
 
 .submit-card input:hover {
@@ -119,32 +114,6 @@ h4 a {
 #card_photo {
   font-family: 'Shadows Into Light Two';
 }
-
-/*#card_photo {
-  display: none;
-}*/
-
-/*#new-photo {
-  border: 1px solid #239AFB;
-  color: white;
-  background: #A0D3FD;
-  padding: 10px;
-  font-size: 20px;
-  width: 300px;
-}*/
-
-/*label {
-  padding-top: 0;
-  margin-top: 0;
-}*/
-
-/*button,
-button button,
-button input,
-input button {
-  border: 1px solid black;
-  background: #A0D3FD;
-}*/
 
 #notice {
   background: red;
@@ -199,11 +168,8 @@ li {
 #error_explanation {
   width: 400px;
   border: 1px solid white;
-  /*padding: 7px;*/
-  /*padding-bottom: 12px;*/
-  /*margin-bottom: 20px;*/
   background-color: white;
-    text-align: center;
+  text-align: center;
 }
 
 #error_explanation h2 {
@@ -214,8 +180,7 @@ li {
   margin: -7px;
   background-color: red;
   color: white;
-    text-align: center;
-
+  text-align: center;
 }
 
 #error_explanation p {
@@ -329,13 +294,6 @@ li {
     padding-top: 200px;
   }
 
-  footer {
-    /*position: absolute;*/
- /*   bottom: 0;*/
-    /*width: 100%;*/
-    /*display: none;*/
-  }
-
   #home {
     margin-top: 0;
     padding-top: 0;
@@ -374,13 +332,6 @@ li {
     padding-top: 200px;
   }
 
-  footer {
-    /*position: absolute;*/
- /*   bottom: 0;*/
-    /*width: 100%;*/
-    /*display: none;*/
-  }
-
   #home {
     margin-top: 0;
     padding-top: 0;
@@ -391,48 +342,6 @@ li {
   }
 
 }
-
-/* all smartphones in landscape */
-/*@media only screen and (min-width : 321px) and (orientation : landscape) {
-    textarea {
-    width: 400px;
-  }
-
-  body {
-    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
-    background-size: 340px;
-    background-repeat: no-repeat;
-  }
-
-  footer p {
-    font-size: 25px;
-  }
-
-  h1 {
-    padding-top: 140px;
-  }
-
-  h3 {
-    font-size: 50px;
-    padding-top: 200px;
-  }
-
-  footer {*/
-    /*position: absolute;*/
- /*   bottom: 0;*/
-    /*width: 100%;*/
-/*    display: none;
-  }
-
-  #home {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  #home p {
-    font-size: 30px;
-  }
-}*/
 
 /* iPad in portrait */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : portrait) {
@@ -460,7 +369,7 @@ li {
     background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
     background-size: 340px;
     background-repeat: no-repeat;
-    background-position: center-top; /*changed this*/
+    background-position: center-top; 
   }
 
   footer p {
@@ -474,13 +383,6 @@ li {
   h3 {
     font-size: 50px;
     padding-top: 200px;
-  }
-
-  footer {
-    /*position: absolute;*/
- /*   bottom: 0;*/
-    /*width: 100%;*/
-    /*display: none;*/
   }
 
   #home {
@@ -498,7 +400,7 @@ li {
 
   textarea,
   input {
-    width: 300px; /*changed this*/
+    width: 300px; 
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -507,28 +409,19 @@ li {
     background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
     background-size: 340px;
     background-repeat: no-repeat;
-    background-position: center-top; /*changed this*/
+    background-position: center-top; 
   }
 
-  #error_explanation {
+  #error_explanation,
+  #error_explanation h2,
+  #error_explanation p,
+  #error_explanationul li {
     width: 300px;
   }
 
 }
 
 
-
-/*input, 
-textarea {
-  border: 1px solid #239AFB;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: #A0D3FD;
-  font-size: 20px;
-  opacity: .9;
-}*/
 
 
 

@@ -600,8 +600,6 @@
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #F10E0E;">
-                        
-                           <!--  You should feel awesome!  --><%#= @card.sender_name %> <!-- sent you a FlatironPostcard! -->
 
                            
                         </td>
@@ -643,7 +641,6 @@
                                 <br>
                                     <center>
                                         <img  alt="" src="https://s3.amazonaws.com/FlatironPostcard/header.png" width="480" style="max-width:849px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage"></center>
-                                       <!--  <center> --><%#= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%><!-- </center> -->
                                     
                                 
                             </td>
@@ -672,8 +669,6 @@
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;">
-                        
-                         <!--    <center><h1>Hey, <span><%#= @card.recipient_name %></span>!<br>You've received a<br>FlatironPostcard from <span><%#= @card.sender_name %></span>!</h1><center> -->
 
                         </td>
                     </tr>
@@ -714,27 +709,27 @@
 
                             <center><h1><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/message.png", width: "150" %></h1></center>
                           
-   <center> <h2><%= @card.message %></h2></center>
-   <br><br>
-   <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
-   </center><br>
+                               <center> <h2><%= @card.message %></h2></center>
+                               <br><br>
+                               <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%>
+                               </center><br>
 
                         
-                            <center>Return the favor! <a href="http://flatironpostcard.com" target="_blank">Send your own FlatironPostcard!</a><br></center>
-<br>
+                              <center>Return the favor! <a href="http://flatironpostcard.com" target="_blank">Send your own FlatironPostcard!</a><br></center>
+                              <br>
 
-<center>Created with &hearts; by<br><a href="http://ruby005.students.flatironschool.com/students/edwardwarrenNEW.html" target="_blank">Edward Warren</a>, <a href="http://twitter.com/korenlc" target="_blank">Koren Leslie Cohen</a> &amp; <a href="http://twitter.com/bitompkins" target="_blank">Bianca Tompkins</a><br>at <a href="http://twitter.com/flatironschool" target="_blank">The Flatiron School</a>.</center>
-<center><p>Also available on mobile!</p></center>
+                              <center>Created with &hearts; by<br><a href="http://ruby005.students.flatironschool.com/students/edwardwarrenNEW.html" target="_blank">Edward Warren</a>, <a href="http://twitter.com/korenlc" target="_blank">Koren Leslie Cohen</a> &amp; <a href="http://twitter.com/bitompkins" target="_blank">Bianca Tompkins</a><br>at <a href="http://twitter.com/flatironschool" target="_blank">The Flatiron School</a>.</center>
+                              <center><p>Also available on mobile!</p></center>
 
- <center>
+                               <center>
 
- <a href="https://twitter.com/intent/tweet?button_hashtag=FlatironPostcard&text=Spread%20the%20%3C3!%20Send%20a%20FlatironPostcard!%20By%20%40korenlc%20%40bitompkins%20%26%20%40ewarren7%20at%20%40FlatironSchool%20http%3A%2F%2Fflatironpostcard.com" class="twitter-hashtag-button" data-size="large" data-related="korenlc,flatironschool"><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/twitter.jpeg", width: "100" %></a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                               <a href="https://twitter.com/intent/tweet?button_hashtag=FlatironPostcard&text=Spread%20the%20%3C3!%20Send%20a%20FlatironPostcard!%20By%20%40korenlc%20%40bitompkins%20%26%20%40ewarren7%20at%20%40FlatironSchool%20http%3A%2F%2Fflatironpostcard.com" class="twitter-hashtag-button" data-size="large" data-related="korenlc,flatironschool"><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/twitter.jpeg", width: "100" %></a>
+                              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-</center>
-    <br>
+                              </center>
+                                  <br>
 
- <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%></center>
+                               <center><%= image_tag "https://s3.amazonaws.com/FlatironPostcard/stripe.jpg", width: "480"%></center>
 
 
                         </td>
@@ -744,146 +739,7 @@
             </td>
         </tr>
     </tbody>
-</table><!-- <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnShareBlock">
-    <tbody class="mcnShareBlockOuter">
-            <tr>
-                <td valign="top" style="padding:9px" class="mcnShareBlockInner">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnShareContentContainer">
-    <tbody><tr>
-        <td align="left" style="padding-top:0; padding-left:9px; padding-bottom:0; padding-right:9px;">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnShareContent" style="border: 2px solid #F00A0A;background-color: #0000CD;">
-                <tbody><tr>
-                    <td align="left" valign="top" class="mcnShareContentItemContainer" style="padding-top:9px; padding-right:9px; padding-left:9px;">
-            <table border="0" cellpadding="0" cellspacing="0">
-              <tbody><tr>
-                <td align="left" valign="top">
-                              <center> -->
-                                 <!--  <table align="left" border="0" cellpadding="0" cellspacing="0">
-                                      <tbody><tr>
-                                          <td valign="top" style="padding-right:9px; padding-bottom:9px;" class="mcnShareContentItemContainer">
-                                              <table border="0" cellpadding="0" cellspacing="0" width="" class="mcnShareContentItem" style="border-collapse: separate;border: 1px solid #0000CD;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;background-color: #FFFFFF;">
-                                                  <tbody><tr>
-                                                      <td align="left" valign="middle" style="padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;">
-                                                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                              <tbody><tr>
-                                                                  <td align="center" valign="middle" width="24" class="mcnShareIconContent">
- -->
-                                                                  
-
-
-                                                                     <!--  <a href="https://www.facebook.com/sharer/sharer.php?u=http://flatironpostcard.com" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display:block;" height="24" width="24" class=""></a> -->
-                                                              <!--     </td>
-                                                                  <td align="left" valign="middle" class="mcnShareTextContent" style="padding-left:5px;"> -->
-                                                                     <!--  <a href="https://www.facebook.com/sharer/sharer.php?u=http://flatironpostcard.com" target="" style="color: #070707;font-family: Arial;font-size: 16px;font-weight: normal;line-height: 100%;text-align: left;text-decoration: none;">Share</a> -->
-                                                <!--                   </td>
-                                                              </tr>
-                                                          </tbody></table>
-                                                      </td>
-                                                  </tr>
-                                              </tbody></table>
-                                          </td>
-                                      </tr>
-                                  </tbody></table> -->
-                <!--[if gte mso 6]>
-                </td>
-                  <td align="left" valign="top">
-                <![endif]-->
-                              
-                  <!--                 <table align="left" border="0" cellpadding="0" cellspacing="0">
-                                      <tbody><tr>
-                                          <td valign="top" style="padding-right:9px; padding-bottom:9px;" class="mcnShareContentItemContainer">
-                                              <table border="0" cellpadding="0" cellspacing="0" width="" class="mcnShareContentItem" style="border-collapse: separate;border: 1px solid #0000CD;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;background-color: #FFFFFF;">
-                                                  <tbody><tr>
-                                                      <td align="left" valign="middle" style="padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;">
-                                                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                              <tbody><tr>
-                                                                  <td align="center" valign="middle" width="24" class="mcnShareIconContent"> -->
-                                                                     <!--  <a href="https://twitter.com/home?status=http://flatironpostcard.com" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" style="display:block;" height="24" width="24" class=""> --><!-- </a>
-                                                                  </td>
-                                                                  <td align="left" valign="middle" class="mcnShareTextContent" style="padding-left:5px;"> -->
-                                                            <!--           <a href="https://twitter.com/home?status=http://flatironpostcard.com" target="" style="color: #070707;font-family: Arial;font-size: 16px;font-weight: normal;line-height: 100%;text-align: left;text-decoration: none;">Tweet</a> -->
-                                                  <!--                 </td>
-                                                              </tr>
-                                                          </tbody></table>
-                                                      </td>
-                                                  </tr>
-                                              </tbody></table>
-                                          </td>
-                                      </tr>
-                                  </tbody></table> -->
-                <!--[if gte mso 6]>
-                </td>
-                  <td align="left" valign="top">
-                <![endif]-->
-                              
-<!--                                   <table align="left" border="0" cellpadding="0" cellspacing="0">
-                                      <tbody><tr>
-                                          <td valign="top" style="padding-right:9px; padding-bottom:9px;" class="mcnShareContentItemContainer">
-                                              <table border="0" cellpadding="0" cellspacing="0" width="" class="mcnShareContentItem" style="border-collapse: separate;border: 1px solid #0000CD;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;background-color: #FFFFFF;">
-                                                  <tbody><tr>
-                                                      <td align="left" valign="middle" style="padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;">
-                                                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                              <tbody><tr>
-                                                                  <td align="center" valign="middle" width="24" class="mcnShareIconContent">
-                                                                      <a href="forward-action"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-forwardtofriend-48.png" style="display:block;" height="24" width="24" class=""></a>
-                                                                  </td>
-                                                                  <td align="left" valign="middle" class="mcnShareTextContent" style="padding-left:5px;">
-                                                                      <a href="forward-action">Forward</a>
-                                                                  </td>
-                                                              </tr>
-                                                          </tbody></table>
-                                                      </td>
-                                                  </tr>
-                                              </tbody></table>
-                                          </td>
-                                      </tr>
-                                  </tbody></table> -->
-                <!--[if gte mso 6]>
-                </td>
-                  <td align="left" valign="top">
-                <![endif]-->
-                              
-                               <!--  <table align="left" border="0" cellpadding="0" cellspacing="0">
-                                      <tbody><tr>
-                                          <td valign="top" style="padding-right:0; padding-bottom:9px;" class="mcnShareContentItemContainer">
-                                              <table border="0" cellpadding="0" cellspacing="0" width="" class="mcnShareContentItem" style="border-collapse: separate;border: 1px solid #0000CD;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;background-color: #FFFFFF;">
-                                                  <tbody><tr>
-                                                      <td align="left" valign="middle" style="padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;">
-                                                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                              <tbody><tr>
-                                                                  <td align="center" valign="middle" width="24" class="mcnShareIconContent"> -->
-                                                                     <!--  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://flatironpostcard.com&title=FlatironPostcard&summary=&source="><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-linkedin-48.png" style="display:block;" height="24" width="24" class=""> --><!-- </a>
-                                                                  </td>
-                                                                  <td align="left" valign="middle" class="mcnShareTextContent" style="padding-left:5px;"> -->
-                                                                      <!-- <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://flatironpostcard.com&title=FlatironPostcard&summary=&source=">Share</a> -->
-                                                     <!--              </td>
-                                                              </tr>
-                                                          </tbody></table>
-                                                      </td>
-                                                  </tr>
-                                              </tbody></table>
-                                          </td>
-                                      </tr>
-                                  </tbody></table></center> -->
-                <!--[if gte mso 6]>
-                </td>
-                  <td align="left" valign="top">
-                <![endif]-->
-                              
-<!--                 </td>
-              </tr>
-            </tbody></table>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-</tbody></table> -->
-
-<!--                 </td>
-            </tr>
-    </tbody>
-</table></td> -->
+</table>
                                         </tr>
                                     </table>
                                     <!-- // END BODY -->
@@ -905,10 +761,10 @@
                         <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;">
                         <center>
                             <em>Copyright © 2014, <a href="http://flatironpostcard.com" target="_blank">FlatironPostcard</a>, All rights reserved.</em><br>
-<br>
-New York, NY<br>
-<br>
-</center>
+                              <br>
+                              New York, NY<br>
+                              <br>
+                              </center>
                         </td>
                     </tr>
                 </tbody></table>

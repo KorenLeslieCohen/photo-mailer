@@ -330,7 +330,13 @@ li {
   footer {
     /*position: absolute;*/
  /*   bottom: 0;*/
-    width: 100%;
+    /*width: 100%;*/
+    display: none;
+  }
+
+  #home {
+    margin-top: 0;
+    padding-top: 0;
   }
 
 }

@@ -301,66 +301,6 @@ li {
 
 }
 
-/* iPhone - 350px Breakpoint -------> */
-@media only screen and (max-width : 320px) {
-
-  textarea,
-  input {
-    width: 300px; /*changed this*/
-  }
-
-  body {
-    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
-    background-size: 340px;
-    background-repeat: no-repeat;
-    background-position: center-top; /*changed this*/
-  }
-
-}
-
-/* iPhone in landscape - 480px Breakpoint -------> */
-@media only screen and (max-device-width : 480px) and (orientation: landscape) {
-  textarea,
-  input {
-    width: 400px;
-  }
-
-  body {
-    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
-    background-size: 340px;
-    background-repeat: no-repeat;
-    background-position: center-top; /*changed this*/
-  }
-
-  footer p {
-    font-size: 25px;
-  }
-
-  h1 {
-    padding-top: 140px;
-  }
-
-  h3 {
-    font-size: 50px;
-    padding-top: 200px;
-  }
-
-  footer {
-    /*position: absolute;*/
- /*   bottom: 0;*/
-    /*width: 100%;*/
-    display: none;
-  }
-
-  #home {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  #home p {
-    font-size: 30px;
-  }
-}
 
 /* iPhone - 480px Breakpoint -------> */
 @media only screen and (max-device-width : 480px) {
@@ -503,6 +443,69 @@ li {
 
   h1 {
     padding-top: 165px;
+  }
+
+}
+
+
+
+/* iPhone in landscape - 480px Breakpoint -------> */
+@media only screen and (max-device-width : 480px) and (orientation: landscape) {
+  textarea,
+  input {
+    width: 400px;
+  }
+
+  body {
+    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
+    background-size: 340px;
+    background-repeat: no-repeat;
+    background-position: center-top; /*changed this*/
+  }
+
+  footer p {
+    font-size: 25px;
+  }
+
+  h1 {
+    padding-top: 140px;
+  }
+
+  h3 {
+    font-size: 50px;
+    padding-top: 200px;
+  }
+
+  footer {
+    /*position: absolute;*/
+ /*   bottom: 0;*/
+    /*width: 100%;*/
+    display: none;
+  }
+
+  #home {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #home p {
+    font-size: 30px;
+  }
+}
+
+/* iPhone - 350px Breakpoint -------> */
+@media only screen and (max-width : 320px) {
+
+  textarea,
+  input {
+    width: 300px; /*changed this*/
+  }
+
+  body {
+    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
+    background-size: 340px;
+    background-repeat: no-repeat;
+    background-position: center-top; /*changed this*/
   }
 
 }

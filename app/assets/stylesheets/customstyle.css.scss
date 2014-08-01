@@ -294,7 +294,8 @@ li {
 /* iPhone - 500px Breakpoint -------> */
 @media screen and (max-width : 500px) {
 
-  textarea {
+  textarea,
+  input {
     width: 450px;
   }
 
@@ -303,15 +304,24 @@ li {
 /* iPhone - 350px Breakpoint -------> */
 @media only screen and (max-width : 320px) {
 
-  textarea {
-    width: 320px; /*changed this*/
+  textarea,
+  input {
+    width: 300px; /*changed this*/
+  }
+
+  body {
+    background-image: url("https://s3.amazonaws.com/FlatironPostcard/flatironstamp.png");
+    background-size: 340px;
+    background-repeat: no-repeat;
+    background-position: center-top; /*changed this*/
   }
 
 }
 
 /* iPhone in landscape - 480px Breakpoint -------> */
 @media only screen and (max-device-width : 480px) and (orientation: landscape) {
-  textarea {
+  textarea,
+  input {
     width: 400px;
   }
 

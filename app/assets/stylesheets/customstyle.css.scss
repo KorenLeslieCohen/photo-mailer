@@ -432,7 +432,7 @@ li {
 }
 
 /* all smartphones in landscape */
-@media only screen and (min-width : 321px) {
+/*@media only screen and (min-width : 321px) and (orientation : landscape) {
     textarea {
     width: 400px;
   }
@@ -456,11 +456,11 @@ li {
     padding-top: 200px;
   }
 
-  footer {
+  footer {*/
     /*position: absolute;*/
  /*   bottom: 0;*/
     /*width: 100%;*/
-    display: none;
+/*    display: none;
   }
 
   #home {
@@ -471,7 +471,7 @@ li {
   #home p {
     font-size: 30px;
   }
-}
+}*/
 
 /* iPad in portrait */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation : portrait) {

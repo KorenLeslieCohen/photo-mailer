@@ -301,10 +301,10 @@ li {
 }
 
 /* iPhone - 350px Breakpoint -------> */
-@media screen and (max-width : 350px) {
+@media only screen and (max-width : 320px) {
 
   textarea {
-    width: 350px; /*changed this*/
+    width: 320px; /*changed this*/
   }
 
 }

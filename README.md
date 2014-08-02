@@ -16,8 +16,8 @@ Access the website on your computer or mobile device, fill out the form, upload 
 
 FlatironPostcard was created by:
 
-Koren Leslie Cohen: <a href="http://twitter.com/korenlc" target="_blank">Twitter</a>, <a href="http://korenlc.com" target="_blank">Blog</a>, <a href="http://linkedin.com/pub/koren-leslie-cohen/26/178/726/" target="_blank">LinkedIn</a>
-Edward Warren: <a href="http://linkedin.com/pub/edward-warren/93/2a8/b78" target="_blank">LinkedIn</a>
+Koren Leslie Cohen: <a href="http://twitter.com/korenlc" target="_blank">Twitter</a>, <a href="http://korenlc.com" target="_blank">Blog</a>, <a href="http://linkedin.com/pub/koren-leslie-cohen/26/178/726/" target="_blank">LinkedIn</a><br>
+Edward Warren: <a href="http://linkedin.com/pub/edward-warren/93/2a8/b78" target="_blank">LinkedIn</a><br>
 Bianca Tompkins: <a href="http://twitter.com/bitompkins" target="_blank">Twitter</a>
 
 ## License

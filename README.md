@@ -12,7 +12,7 @@ This Ruby on Rails application utilizes the Mandrill and S3 APIs, as well as the
 
 Access the website on your computer or mobile device, fill out the form, upload a photo of your choice and click send. Your FlatironPostcard will be delivered immediately and a copy sent to you. It's that easy!
 
-## Author
+## Authors
 
 FlatironPostcard was created by:
 

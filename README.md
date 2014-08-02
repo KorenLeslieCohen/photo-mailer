@@ -1,39 +1,24 @@
 # Photo Mailer
 
-## Description
+FlatironPostcard allows you to send customized digital postcards to family and friends. FlatironPostcards can also be sent from your mobile device.
 
 Add a short description of your app.
 
-## Screenshots
-
-Add some spiffy screenshots of your app here.
-
 ## Background
 
-Why did you want to make this app? What was your development process
-like?
-
-## Features
-
-Bullet point some of the key features of your app here.
+This Ruby on Rails application utilizes the Mandrill and S3 APIs, as well as the Paperclip and Imagemagick gems. Several custom media queries were added to provide users with an independent iPhone and mobile interface. Custom HTML email template.
 
 ## Usage
 
-How do users use your app?
-
-## Development/Contribution
-
-Explain how people can contribute to your app. How should they write tests?
-Any things in particular you'd like to see in pull requests?
-
-## Future
-
-What features are you currently working on? Only mention things that you
-actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
+Access the website on your computer or mobile device, fill out the form, upload a photo of your choice and click send. Your FlatironPostcard will be delivered immediately and a copy sent to you. It's that easy!
 
 ## Author
 
-Link to your blog, twitter, etc!
+FlatironPostcard was created by:
+
+Koren Leslie Cohen: <a href="http://twitter.com/korenlc" target="_blank">Twitter</a>, <a href="http://korenlc.com" target="_blank">Blog</a>, <a href="http://linkedin.com/pub/koren-leslie-cohen/26/178/726/" target="_blank">LinkedIn</a>
+Edward Warren: <a href="http://linkedin.com/pub/edward-warren/93/2a8/b78" target="_blank">LinkedIn</a>
+Bianca Tompkins: <a href="http://twitter.com/bitompkins" target="_blank">Twitter</a>
 
 ## License
 

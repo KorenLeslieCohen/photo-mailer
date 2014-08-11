@@ -1,4 +1,4 @@
-# Photo Mailer
+# FlatironPostcard
 
 FlatironPostcard allows you to send customized digital postcards to family and friends. FlatironPostcards can also be sent from your mobile device.
 
@@ -20,4 +20,4 @@ Bianca Tompkins: <a href="http://twitter.com/bitompkins" target="_blank">Twitter
 
 ## License
 
-Photo Mailer is MIT Licensed. See LICENSE for details.
+FlatironPostcard is MIT Licensed. See LICENSE for details.

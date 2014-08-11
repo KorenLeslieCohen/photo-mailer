@@ -2,6 +2,9 @@
 
 FlatironPostcard allows you to send customized digital postcards to family and friends. FlatironPostcards can also be sent from your mobile device.
 
+
+<a href="http://flatironpostcard.com" target="_blank"><img src="http://www.korenlc.com/wp-content/uploads/2014/06/postcard-1024x566.png"></a>
+
 ## Background
 
 This Ruby on Rails application utilizes the Mandrill and S3 APIs, as well as the Paperclip and Imagemagick gems. Several custom media queries were added to provide users with an independent iPhone and mobile interface. Custom HTML email template.
